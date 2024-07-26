@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mind Mate</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"> -->
+
+</head>
+<body>
+    <section class="hero" id="hero">
+        <!-- navbar division -->
+         <div class="navbar">
+            <span class="logo">Mind Mate</span>
+
+        <div class="nav-info">
+            <!-- ////////////////////////////////////////////// -->
+            <!--// fix later so the longer the name it adjusts//-->
+            <!-- ////////////////////////////////////////////// -->
+            <span class="nav-name">User</span>
+            <img src="../static/image/user-image.png" alt="user icon" class="nav-icon">
+            </div>
+         </div>
+
+        <!-- side menu div -->
+        <div class="side-menu" id="side-menu">
+            <h1 class="side-header">Upload a PDF to Get Started</h1>
+            <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" class="insert-file" id="fileInputId">
+                <button type="submit" class="side-btn" id="upload-button">Upload</button>
+            </form>
+            <button type="submit" class="side-btn2" onclick="clearFunction()">clear</button>
+            <button type="submit" class="side-btn3" id="generate-button" onclick="updateText()" disabled>Generate Question</button>
+            
+        </div>
+
+        <!-- main-content -->
+         <div class="main-content" id="main-content">
+            <h1 class="main-h1">Hello there!</h1>
+            <span class="main-span-1">
+                Mind mate is a reliable chatbot that is here to give you the support of
+                a personal tutor, help you revise and help you become aware of your learning process
+                and understand how you learn in general.
+            </span>
+            <span class="main-span-2">
+                Get started with 3 simple steps
+            </span>
+            <ul class="main-ul">
+                <li>Upload a pdf document.</li>
+                <li>Click on the "Generate questions" button to get questions.</li>
+                <li>And provide answers to the questions the model asks you.</li>
+            </ul>
+            <span class="main-span-3">
+                After answering all the questions the model give ways to improve your 
+                understanding of the pdf you gave while improving your ability of underatanding 
+                of your thought process.
+            </span>
+         </div>
+
+        <!-- query button -->
+        <div class="input-container">
+            <input type="text" class="input-box" id="my_prompt" placeholder="Ready? Lets Go!!!" disabled></input>
+            <button type="submit" class="query-send-btn">
+            <img src="../static/image/send-icon.svg" alt="send-icon" class="send-btn" id="send-btn" onclick="send_user_prompt()">
+            </button>
+        </div>
+
+    </section>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
