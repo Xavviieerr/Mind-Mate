@@ -289,3 +289,124 @@ input[type="file"]::file-selector-button {
   .chat-bubble-message2 {
     word-wrap: break-word;
   }
+
+
+@media (max-width: 600px) {
+.navbar{
+    height:7%;
+}
+.logo{
+    font-size: 140%;
+}
+.nav-name{
+    font-size: 100%;
+    top: 4.5%;
+}
+.nav-icon{
+    height: 39%;
+    width: 39%;
+}
+.side-menu{
+    height: 24%;
+    width: 90%;
+    box-shadow: 0 2px 4px 0 var(--Rufous), 0 3px 5px 0 var(--Rufous);
+    padding: 1% 1%;
+    top: 3%;
+ }
+ .side-header{
+    font-size: 90%;
+    margin-bottom: 1%; 
+ }
+ .side-btn{
+     height: 20px;
+     width: 180px;
+     font-size: 77%;
+     margin: 1% 0%;
+ }
+ .side-btn2{
+     height: 20px;
+     width: 50%;
+     border-radius: 5px;
+     font-size: 77%;
+     margin: 1% 0%;
+ }
+ .side-btn3{
+     border: none;
+     height: 20px;
+     width: 180px;
+     border-radius: 6px;
+     font-size: 77%;
+     margin: 2% 0%;
+ }
+ input[type="file"]::file-selector-button {
+     padding: 1% 3%;
+ }
+.main-content{
+    height: 40%;
+    width: 82%;
+    top: 41%;
+    right: 5%;
+    font-size: 140px;
+}
+.main-h1{
+    font-size: 33px; 
+}
+.main-span-1{
+    font-size: 15px;
+}
+.main-span-2{
+    font-size: 16.5px;
+}
+.main-span-3{
+    font-size: 14px;
+}
+.main-ul{
+    font-size: 14px;
+}
+.input-box{
+    height: 29%;
+    width: 190%;
+    margin-top: 10%;
+    font-size: 80%;
+}
+.query-send-btn{
+    height: 210%;
+    width: 60px;
+    margin-top: 10%;
+}
+.send-btn{
+    height: 28px;
+    width: 28px;
+    margin: 7% 0%;
+}
+}
+
+/*Mind Mate chat bubble style*/
+.chat-bubble {
+    padding: 2%;
+    width: 58%;
+    margin: 5% 0%;
+}  
+.chat-bubble-header {
+    margin-bottom: 3% 2%;
+    font-size: 12%;
+}
+.chat-bubble-message {
+    font-size: 11%;
+}
+
+/*user chat bubble style*/
+.chat-bubble2 {
+    width: 49%;
+    margin-left: 45%;
+  }
+  
+  .chat-bubble-header2 {
+    margin-bottom: 3% 2%;
+    font-size: 12%;
+  }
+  
+  .chat-bubble-message2 {
+    font-size: 11%;
+  }
+
